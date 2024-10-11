@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Server Status Checker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Minecraft Server Status Checker</h1>
+        <form id="status-form">
+            <div class="input-group">
+                <label for="ip">Server IP:</label>
+                <input type="text" id="ip" placeholder="Enter server IP" required>
+            </div>
+
+            <div class="input-group">
+                <label for="port">Port:</label>
+                <input type="text" id="port" placeholder="Optional (Default 25565/19132)">
+            </div>
+
+            <div class="input-group">
+                <label for="type">Server Type:</label>
+                <select id="type">
+                    <option value="java">Java</option>
+                    <option value="bedrock">Bedrock</option>
+                </select>
+            </div>
+
+            <button type="submit" class="check-btn">Check Status</button>
+        </form>
+
+        <div id="server-icon" class="icon-box"></div>
+        <div id="server-status" class="status-box">
+            <p>Enter a server to check its status.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

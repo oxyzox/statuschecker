@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1e1e2f;  /* Dark background */
+    color: #fff;  /* White text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background-color: #2f3136;  /* Dark container background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    transition: all 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #7289da;  /* Discord's blue for the title */
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #b9bbbe;  /* Light gray text for labels */
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 5px;
+    border: 1px solid #444;  /* Slightly lighter border for dark theme */
+    border-radius: 8px;
+    background-color: #3a3c43;  /* Dark input background */
+    color: #fff;  /* White text in inputs */
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #7289da;  /* Blue border on focus */
+    background-color: #2c2f36;  /* Darker background on focus */
+}
+
+.check-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #7289da;  /* Discord blue button */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.check-btn:hover {
+    background-color: #5b6e99;  /* Darker blue on hover */
+}
+
+.icon-box img {
+    margin: 20px auto;
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.status-box {
+    margin-top: 20px;
+    background-color: #33363d;  /* Slightly lighter background for the status box */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #444;  /* Border around the status box */
+    transition: all 0.3s ease;
+}
+
+.status-box p {
+    font-size: 1.1rem;
+    color: #b9bbbe;  /* Light gray text for status box */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .check-btn {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    input, select {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, select {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    .check-btn {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    label {
+        font-size: 0.85rem;
+    }
+}
